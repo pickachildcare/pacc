@@ -4,14 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function HelloWorld() {
-  return <h1 className="greeting"> * Welcome to Pick a ChildCare * - coming soon!</h1>;
+function Greeting() {
+  return (
+    <div className="max-w-7xl mx-auto px-4 py-12 text-center">
+      <h1 className="greeting"> * Pick a ChildCare app* - coming soon!</h1>
+         <h3 className="text-xl sm:text-5xl font-bold text-white bg-black/40 backdrop-blur-md px-8 
+         py-4 rounded-1xl shadow-2xl text-center border border-white/10 uppercase tracking-tight">
+              A free directory of daycares and home-based childcares
+            </h3>
+    </div>
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <HelloWorld />
+   <Greeting />
   </React.StrictMode>
 );
 
